@@ -71,6 +71,6 @@ nstocks.to_csv('top_bottom_stocks.csv', index=False)
 df_sp500.to_csv('s&p_500.csv', index=False)
 
 # Both Top/Bottom and S&P to XLSX
-with pd.ExcelWriter("daily_stock_movers_with_news.xlsx", engine='xlsxwriter') as writer:
+with pd.ExcelWriter("daily_stock_movers_with_news" + td + ".xlsx", engine='xlsxwriter') as writer:
     df_sp500.to_excel(writer, sheet_name='All S&P 500 Data', index=False)
     nstocks.to_excel(writer, sheet_name='Top & Bottom 5 w News', index=False)
