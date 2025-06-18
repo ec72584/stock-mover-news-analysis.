@@ -1,1 +1,11 @@
 feedparser
+yfinance
+pandas
+datetime
+numpy
+time
+random
+requests
+bs4
+urllib.parse
+xlsxwriter
